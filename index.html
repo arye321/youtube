@@ -7,17 +7,34 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <input id="textbox" placeholder="https://www.youtube.com/c/channel_name/videos" size="70">
-    <br>
-    <br>
-    <button id="myButton">Open</button>
 
-    <script>
+    <div class="content">
+      <form id="myForm" >
+        <input id="textbox" placeholder="https://www.youtube.com/c/channel_name/videos" size="70">
+        <br>
+        <br>
+        <input type="submit" value="      Open      " id="myButton" onclick="return loginUser()">
+      </form>
+    </div>
 
-       document.getElementById("myButton").onclick = function () {
+  </body>
+
+
+  <script>
+
+       function loginUser() {
          window.open(document.getElementById('textbox').value+"?sort=p",'_blank').focus();
     };
 
     </script>
-  </body>
+  <style>
+    .content {        
+        
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    input { font-size: 20px; }
+</style>
 </html>
