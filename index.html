@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <input id="textbox" placeholder="https://www.youtube.com/c/channel_name/videos" size="70">
+    <br>
+    <br>
+    <button id="myButton">Open</button>
+
+    <script>
+
+       document.getElementById("myButton").onclick = function () {
+         window.open(document.getElementById('textbox').value+"?sort=p",'_blank').focus();
+    };
+
+    </script>
+  </body>
+</html>
