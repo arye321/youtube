@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Sort by popular</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
 
@@ -13,7 +12,7 @@
         <input id="textbox" placeholder="https://www.youtube.com/c/channel_name/videos" size="70" autofocus>
         <br>
         <br>
-        <input type="submit" value="      Open      " id="myButton" onclick="return loginUser()">
+        <input type="submit" value="      Open      " id="myButton" onclick="return submitForm()">
       </form>
     </div>
 
@@ -22,7 +21,7 @@
 
   <script>
 
-       function loginUser() {
+       function submitForm() {
          window.open(document.getElementById('textbox').value+"?sort=p",'_blank').focus();
     };
 
